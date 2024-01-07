@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public PuckController puckController;
+    public MalletController mallet1Controller;
+    public AIMalletController mallet2Controller;
+
     public int winningScore = 5;
     public Text scoreText;
 
@@ -35,6 +38,9 @@ public class GameController : MonoBehaviour
 
         UpdateScoreText();
         puckController.ResetPosition();
+
+        mallet1Controller.ResetPosition();
+        mallet2Controller.ResetPosition();
     }
 
     void UpdateScoreText()
