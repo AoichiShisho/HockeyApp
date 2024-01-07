@@ -2111,6 +2111,7 @@ GameObject:
   - component: {fileID: 2088190663}
   - component: {fileID: 2088190662}
   - component: {fileID: 2088190664}
+  - component: {fileID: 2088190665}
   m_Layer: 0
   m_Name: Mallet2
   m_TagString: Untagged
@@ -2260,6 +2261,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeftMallet: 0
+--- !u!114 &2088190665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088190659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8389b4ef22042a89403cf5ea55bffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puck: {fileID: 1968893048}
 --- !u!1 &2127256780
 GameObject:
   m_ObjectHideFlags: 0

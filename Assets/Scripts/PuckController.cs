@@ -12,6 +12,7 @@ public class PuckController : MonoBehaviour
     {
         startPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();    
+        // rb.isKinematic = true;
     }
 
     // Update is called once per frame

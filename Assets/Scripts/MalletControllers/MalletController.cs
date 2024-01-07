@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class MalletController : MonoBehaviour
 {
-    public bool isLeftMallet; // これが左側のマレットかどうかを示すフラグ
+    public bool isLeftMallet; 
     private float speed = 30f;
     private Rigidbody2D rb;
     private Vector2 targetPosition;
     private float smoothTime = 0.1f;
     private Vector2 currentVelocity;
+
+    public Vector2 startPosition;
 
     void Start()
     {
@@ -48,5 +50,11 @@ public class MalletController : MonoBehaviour
         // 新しい位置を計算して移動
         Vector2 newPosition = Vector2.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothTime, speed);
         rb.MovePosition(newPosition);
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
+        Debug.Log( "ResetPosition");
     }
 }
