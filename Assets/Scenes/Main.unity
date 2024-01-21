@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puckController: {fileID: 1968893054}
+  mallet1Controller: {fileID: 0}
+  mallet2Controller: {fileID: 0}
   winningScore: 5
   scoreText: {fileID: 2073063448}
 --- !u!4 &60135136
@@ -468,6 +470,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
+--- !u!1 &924192224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924192225}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924192225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924192224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.460763, y: 0.81498784, z: -0.5541076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961161390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeftMallet: 0
+  startPosition: {x: 0, y: 0}
 --- !u!1 &1665917671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeftMallet: 0
+  startPosition: {x: 0, y: 0}
 --- !u!114 &2088190665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2274,6 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puck: {fileID: 1968893048}
+  startPosition: {x: 0, y: 0}
 --- !u!1 &2127256780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,3 +2517,4 @@ SceneRoots:
   - {fileID: 2068426510}
   - {fileID: 2127256784}
   - {fileID: 1358616039}
+  - {fileID: 924192225}
